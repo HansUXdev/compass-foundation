@@ -1,32 +1,117 @@
-<!DOCTYPE html>
- <html lang="en">
- <head>
- 	<meta charset="UTF-8">
- 	<title>Document</title>
+<!doctype html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)">
+<head>
+   <meta charset="utf-8"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <title>Foundation Template | Empty</title>
+   <meta name="description" content="Documentation and reference library for ZURB Foundation. JavaScript, CSS, components, grid and more."/>
+   <meta name="author" content="ZURB, inc. ZURB network also includes zurb.com"/>
+   <meta name="copyright" content="ZURB, inc. Copyright (c) 2013"/>
+   <!-- <link rel="stylesheet" href="css/foundation.css"/> -->
 
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700&subset=latin,cyrillic-ext,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.min.css">
-
- 	<link rel="stylesheet" href="stylesheets/foundation.css"/>
- 	<link rel="stylesheet" href="stylesheets/menu/menu.css"/>
- 	<link rel="stylesheet" href="stylesheets/animate.css"/>
+	<!-- ICONS -->
+   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.min.css">
+   
+	<!-- Framework -->
+	<link rel="stylesheet" href="stylesheets/foundation.css"/>
+	<link rel="stylesheet" href="stylesheets/animate.css"/>
 
 	<script src="javascripts/vendor/modernizr.js"></script>
- </head>
- <body>
+</head>
+<body>
+<!--  -->
+	<nav class="top-bar" data-topbar>
+		<ul class="title-area">
+		  <li class="name">
+		    <h1><a href="#">Test Site</a></h1>
+		  </li>
+		   <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+		  <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+		</ul>
 
-	<div id="page-content">
-	   <h1 class="fadeInDown"> Some content here!</h1>
-	</div>
-	<div id="menu"></div>
+		<section class="top-bar-section">
+		  <!-- Right Nav Section -->
+		  <ul class="center">
+		    <!-- Snippets -->
+		    <li><a href="menu.html">New Menu</a></li>
+		    <li><a href="index.html">Parallax Video</a></li>
+		    <li><a href="#"></a></li>
+		  </ul>
+		</section>
+	</nav>
+<!--  -->
 
-	<section>
-		
-	</section>
 
- 	<script src="javascripts/vendor/jquery.js"></script>
- 	<script src="javascripts/foundation.min.js"></script>
- 	<script src="javascripts/vendor/menu/jquery.multilevelpushmenu.min.js"></script>
- 	<script src="javascripts/vendor/menu/menuJS.js"></script>
- </body>
- </html> 
+
+	<!-- Hide the Background Video -->
+		<div style="background-color:white; height:500px;"></div>
+
+	<!-- show background video -->
+		<div id="video-bg" style="background-color:transparent; height:500px;">
+			<!-- text above video -->
+		  	<div class="video-content">
+			    <div class="row">
+					<h1 class="fadeInDown2 text-center" style="color:white;"> Simple background-video</h1>
+			    </div>
+		  	</div>
+
+			<div class="video-bg">
+				    <div class="content" style="position: absolute;top: 2em;left:25%;">
+				    	<div class="row">
+			    			<h1 class="fadeInDown text-center"> 
+			    				Check it out!
+			    				<br> 
+
+			    				<br>
+			    					AND easy background-videos!
+			    			</h1>
+				    	</div>
+				    </div>
+			    <!-- Create the background video -->
+					<div id="block" style="width: 100%; height: 500px;position: fixed;top: 0em;z-index: -1000;" 
+						data-vide-bg="assets/ocean" 
+						data-vide-options="position: 0% 50%"></div>
+					</div>
+		</div>
+
+<footer class="row">
+  <div class="large-12 columns">
+     <hr>
+     <div class="row">
+        <div class="large-6 columns">
+           <p>© Copyright no one at all. Go to town.</p>
+        </div>
+        <div class="large-6 columns">
+           <ul class="inline-list right">
+              <li>
+                 <a href="#">Link 1</a>
+              </li>
+              <li>
+                 <a href="#">Link 2</a>
+              </li>
+              <li>
+                 <a href="#">Link 3</a>
+              </li>
+              <li>
+                 <a href="#">Link 4</a>
+              </li>
+           </ul>
+        </div>
+     </div>
+  </div>
+</footer>
+
+<!-- /Content -->
+   <script src="javascripts/vendor/jquery.js"></script>
+   <script src="javascripts/foundation.min.js"></script>
+   <script>
+      $(document).foundation();
+
+      var doc = document.documentElement;
+      doc.setAttribute('data-useragent', navigator.userAgent);
+    </script>
+    <!-- BG-Video BLOCK -->
+      <script src="javascripts/vendor/bg-video/jquery.vide.js"></script>
+</body>
+</html>
